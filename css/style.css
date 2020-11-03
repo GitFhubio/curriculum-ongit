@@ -1,0 +1,47 @@
+*{
+  margin:0 auto;
+  font-family: "Times New Roman", Times, serif;
+}
+header{
+  text-align:center;
+  background-color: lightgrey;
+}
+img{
+  width:120px;
+  height:120px;
+}
+main, header{
+  border-bottom:2px solid #CD853F;
+}
+
+main{
+  padding:10px;
+}
+/* oppure avrei potuto dare class "border-bottom" a main e header per questa proprietà comune */
+
+section{
+
+  margin:10px 0 0 8px;
+}
+h2, h4{
+  margin:10px 0;
+}
+/* per h2 e h4 stesso discorso di cui sopra a riga 16 */
+
+h3{
+  color: darkorange;
+}
+h4{
+  font-style: italic;
+}
+p{
+  font-size: 14px;
+}
+footer p{
+  margin-top: 6px;
+}
+/* anche qui avrei potuto dare classe al p del footer */
+/* In alternativa era possibile usare un div di classe item contenente gli h4 e i p,e dare il margine ad essa,
+ma anche il padding sarebbe stato uguale in questo esercizio */
+
+/* le prove delle versioni alternative le ho fatte in fogli di stile che non ho caricato, come bonus vorrei provare altro */

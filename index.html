@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang=zxx dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Curriculum vitae</title>
+    <meta name="description" content="Qui raccolgo tutte le mie esperienze passate">
+    <link rel="stylesheet" href="css/style.css" type="text/css" title="layout times">
+    <link rel="alternate stylesheet" href="css/stylealternate.css" title="layout arial">
+  </head>
+  <body>
+    <!-- apro l'header -->
+   <header>
+    <img src="img/fotoprofilo.jpg" alt="foto del profilo">
+    <h2>Fabio Petrone - Web Developer</h2>
+   </header>
+   <!-- chiudo l'header -->
+   <!-- apro il main -->
+    <main>
+     <!-- apro la section 1 -->
+     <section>
+       <h3 >Experience</h3>
+       <h4>Evil mega corp 1</h4>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <strong>exercitation ullamco laboris</strong> nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       <h4>Evil mega corp 2</h4>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+     </section>
+     <!-- chiudo la section 1 -->
+     <!-- apro la section 2 -->
+     <section>
+       <h3>Education</h3>
+       <h4>University of Life</h4>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+     </section>
+     <!-- chiudo la section 2 -->
+     <!-- apro la section 3 -->
+     <section>
+       <h3>Interests</h3>
+       <h4>Coding</h4>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+     </section>
+     <!-- chiudo la section 3 -->
+   </main>
+   <!-- chiudo il main -->
+   <!-- apro il footer -->
+   <footer>
+     <p>Made with &hearts; by Boolean Careers</p>
+   </footer>
+   <!-- chiudo il footer -->
+   <br>
+   <!-- metto di proposito lo stile in linea, Ã¨ assolutamente da evitare -->
+   <p style="text-align:center;">Scegli lo stile:
+   <a onclick="scegliStile('layout times')" href="#">Style 1</a>
+   <a onclick="scegliStile('layout arial')" href="javascript:void(0)">Style 2</a>
+   </p>
+
+   <script type="text/javascript">
+
+
+
+
+   function scegliStile(title) {
+     for(i=0; (a = document.getElementsByTagName("link")[i]); i++) {
+       if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) {
+        // b=a.getAttribute("rel");
+        // console.log(b);
+        // c=b.indexOf("style");
+        // console.log(c);
+         a.disabled = true;
+         if(a.getAttribute("title") == title) {
+           a.disabled = false;
+
+         }
+       }
+     }
+
+   }
+
+
+   </script>
+
+   <!-- Ricordami di chiedere ai prof la differenza tra # e javascript:void(0) -->
+   <!-- Ricordami di chiedere se in un'istruzione condizionale vale il concetto
+   di esistenza,oltre che quello di veritÃ :sarebbe stato cioÃ¨ giusto scrivere semplicemente
+   a.getAttribute("rel").indexOf("style") nell'if ? -->
+
+   </div>
+  </body>
+ </html>
+
+<!-- Un modo di centrare l'immagine senza usare text align era trasformarla in blocco con display:block e quindi darle margin:0 auto -->
