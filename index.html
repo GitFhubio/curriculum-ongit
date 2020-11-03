@@ -57,26 +57,32 @@
 
 
 
+ // script alternativo javascript per switchare stili
+   function scegliStile1() {
+     var x = document.getElementsByTagName("link");
+ for (i=0;i<x.length;++i) {
+  if (x[i].getAttribute("href") == "css/style.css") {
+    x[i].setAttribute("href", "css/stylealternate.css");
 
-   function scegliStile(title) {
-     for(i=0; (a = document.getElementsByTagName("link")[i]); i++) {
-       if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) {
-        // b=a.getAttribute("rel");
-        // console.log(b);
-        // c=b.indexOf("style");
-        // console.log(c);
-         a.disabled = true;
-         if(a.getAttribute("title") == title) {
-           a.disabled = false;
 
-         }
-       }
-     }
+ }
 
-   }
+ }}
+
+   function scegliStile2() {
+     var x = document.getElementsByTagName("link")
+ for (i=0;i<x.length;++i) {
+  if (x[i].getAttribute("href") == "css/stylealternate.css") {
+    x[i].setAttribute("href", "css/style.css");
+
+ }
+
+
+ }}
 
 
    </script>
+
 
    <!-- Ricordami di chiedere ai prof la differenza tra # e javascript:void(0) -->
    <!-- Ricordami di chiedere se in un'istruzione condizionale vale il concetto
